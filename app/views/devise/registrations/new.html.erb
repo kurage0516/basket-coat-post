@@ -1,12 +1,10 @@
-<<<<<<< Updated upstream
-=======
 <%= render "shared/second-header"%>
->>>>>>> Stashed changes
+
 <%= form_with model: @user, url: user_registration_path, class: 'registration-main', local: true do |f| %>
 <div class='form-wrap'>
   <div class='form-header'>
     <h1 class='form-header-text'>
-      ユーザー情報入力
+      <%= link_to image_tag("Basket.logo2.jpeg", class: :logo), root_path %>
     </h1>
   </div>
   
@@ -17,7 +15,7 @@
       <label class="form-text">ニックネーム</label>
       <span class="indispensable">必須</span>
     </div>
-    <%= f.text_area :nickname, class:"input-default", id:"nickname", placeholder:"例) マイケル・ジョーダン", maxlength:"40" %>
+    <%= f.text_area :nickname, class:"input-default", id:"nickname", placeholder:"例) baske太郎", maxlength:"40" %>
   </div>
   <div class="form-group">
     <div class='form-text-wrap'>
@@ -39,17 +37,19 @@
       <label class="form-text">パスワード(確認)</label>
       <span class="indispensable">必須</span>
     </div>
-    <%= f.password_field :password_confirmation, class:"input-default", id:"password-confirmation", placeholder:"同じパスワードを入力" %>
+    <%= f.password_field :password_confirmation, class:"input-default", id:"password-confirmation", placeholder:"同じパスワードを入力して下さい" %>
   </div>
-
-  
+  <div class="form-group">
+    <h2 class='form-bottom-text'>
+      「会員登録」のボタンを押すことにより、
+      <span>利用規約</span>
+      <br>に同意したものとみなします
+    </h2>
+  </div>
   <div class='register-btn'>
     <%= f.submit "会員登録" ,class:"register-red-btn" %>
   </div>
 </div>
-<<<<<<< Updated upstream
 <% end %>
-=======
-<% end %>
+
 <%= render "shared/second-footer"%>
->>>>>>> Stashed changes
