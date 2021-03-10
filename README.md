@@ -16,15 +16,14 @@
 
 ## basket_areas
 
-| Column    | Type       | Options           |
-| --------- | ---------- | ----------------- |
-| coat_name | string     | null: false       |
-| text      | text       |                   |
-| url       | text       |                   |
-| area_id   | integer    | null: false       |
-| price     | integer    | null: false       |
-| time_id   | integer    | null: false       |
-| user      | references | foreign_key: true |
+| Column         | Type       | Options           |
+| -------------- | ---------- | ----------------- |
+| coat_name      | string     | null: false       |
+| street_address | text       | null: false       |
+| url            | text       |                   |
+| price          | integer    | null: false       |
+| time           | string     | null: false       |
+| user           | references | foreign_key: true |
 
 ### Association
 
