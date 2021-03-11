@@ -21,7 +21,7 @@
 | coat_name      | string     | null: false       |
 | street_address | text       | null: false       |
 | url            | text       |                   |
-| price          | integer    | null: false       |
+| price          | string     | null: false       |
 | time           | string     | null: false       |
 | user           | references | foreign_key: true |
 
