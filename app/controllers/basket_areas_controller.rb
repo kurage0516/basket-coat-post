@@ -18,6 +18,7 @@ class BasketAreasController < ApplicationController
   end
 
   def basket_area_params
-    params.require(:basket_area).permit(:content, :image, :coat_name, :street_address, :url, :price, :time).merge(user_id: current_user.id)
+    params.require(:basket_area).permit(:content, :image, :coat_name, :street_address, :url, :price,
+                                        :time).merge(user_id: current_user.id)
   end
 end
