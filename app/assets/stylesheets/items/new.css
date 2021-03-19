@@ -2,7 +2,7 @@
 
 
 .items-sell-contents {
-  background-color: #ffa600;
+  background-color: #efe2cf;
   font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
   font-size: 14px;
   display: flex;
@@ -17,16 +17,18 @@
 }
 
 .items-sell-main {
-  background-color: #FFF;
+  background-color: #2E281f;
   width: 70vw;
   min-width: 450px;
   padding: 10vh 15vw;
 }
 
 .items-sell-title {
-  font-size: 22px;
+  font-size: 50px;
   font-weight: bold;
   text-align: center;
+  color: #efe2cf;
+  font-family: 'Comic Sans MS';
 }
 
 /* 共通 */
@@ -87,6 +89,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 2vh 0;
+  color: #efe2cf;
 }
 
 .click-upload {
@@ -103,6 +106,7 @@
 /* 商品名と商品説明 */
 .new-items {
   padding: 2vh 0;
+  color: #efe2cf;
 }
 
 .items-text {
@@ -211,7 +215,7 @@
 /* /下部ボタン */
 
 .items-sell-footer {
-  background-color: #ffa600;
+  background-color: #efe2cf;
   width: 60vw;
   padding: 3ch 0;
   display: flex;

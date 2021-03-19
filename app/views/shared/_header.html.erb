@@ -1,9 +1,11 @@
-<%# CSS・・・assets/stylesheets/shared/header.css %>
 <header class="header">
   <div class="inner">
     <div class="nav">
       <div class="nav__left">
-        <%= link_to image_tag("Basket.logo1.jpeg", class: :logo), root_path %>
+        <%= link_to image_tag("Basket.logo7.jpeg", class: :logo_a), root_path %>
+      </div>
+      <div class="nav__center">
+        <%= link_to image_tag("Basket.logo1.jpg", class: :logo), "/" %>
       </div>
       <%# ログインしているときは以下を表示するようにしましょう %>
       <% if user_signed_in? %>

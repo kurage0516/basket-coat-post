@@ -9,4 +9,12 @@ class BasketArea < ApplicationRecord
     validates :time
     validates :price
   end
+
+  def self.search(search)
+    if search != ""
+      BasketArea.where('street_address LIKE(?)', "%#{search}%")
+    else
+      BasketArea.all
+    end
+  end
 end

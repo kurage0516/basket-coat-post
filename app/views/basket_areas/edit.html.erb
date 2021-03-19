@@ -3,15 +3,16 @@
     <%= link_to image_tag('Basket.logo7.jpg' , class: 'second-logo'), "/" %>
   </header>
 
+
   <div class="items-sell-main">
     <div class="items-sell-title">
-      Let's Post
+      Edit a Post
     </div>
-    <%= form_with model: @basket_area, url: basket_areas_path, local: true do |f| %>
+    <%= form_with(model: @basket_area, local: true) do |f| %>
 
     <%= render 'shared/error_messages', model: f.object %>
 
-    <%# 出品画像 %>
+<%# 出品画像 %>
     <div class="img-upload">
       <div class="weight-bold-text">
         施設画像
