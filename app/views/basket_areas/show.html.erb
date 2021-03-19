@@ -1,0 +1,47 @@
+<%= render "shared/header" %>
+
+<%# 商品の概要 %>
+<div class="item-show">
+  <div class="item-box">
+    <div class="item-img-content-a">
+      <%= image_tag @basket_area.image, class:"item-box-img" %>
+    </div>
+
+    <table class="detail-table">
+      <tbody>
+        <tr>
+          <th class="detail-item">施設名</th>
+          <td class="detail-value"><%= @basket_area.coat_name %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">住所</th>
+          <td class="detail-value"><%= @basket_area.street_address %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">URL</th>
+          <td class="detail-value"><%= @basket_area.url %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">利用料金</th>
+          <td class="detail-value"><%= @basket_area.price %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">利用時間</th>
+          <td class="detail-value"><%= @basket_area.time %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="basket-area-switch">
+    <% if user_signed_in? %>
+      <% if current_user == @basket_area.user %>
+        <%= link_to "情報編集", edit_basket_area_path, method: :get, class: "item-red-btn" %>
+        <div class="or-text"></div>
+        <%= link_to "削除", basket_area_path(@basket_area.id), method: :delete, class:"item-destroy" %>
+      <% end %>
+    <% end %>
+  </div>
+
+  <%# /商品の概要 %>
+</div>
+<%= render "shared/ssecond-footer" %>

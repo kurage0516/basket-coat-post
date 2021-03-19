@@ -1,7 +1,7 @@
 /* 商品の概要 */
 
 .item-show {
-  background-color: #f8f8f8;
+  background-color: #2e281f;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -10,9 +10,8 @@
 }
 
 .item-box {
-  background-color: #FFF;
-  width: 70vw;
-  min-width: 1200px;
+  background-color: #2e281f;
+  width: 100%;
   padding: 10vh 15vw;
   display: flex;
   flex-direction: column;
@@ -29,7 +28,7 @@
   height: 50vh;
   width: 60vw;
   min-height: 500px;
-  background-color: rgb(205, 202, 202);
+  background-color: #efe2cf;
   object-fit: contain;
 }
 
@@ -52,25 +51,38 @@
 
 .item-red-btn {
   text-align: center;
-  background-color: #ea352d;
+  background-color: #efe2cf;
   font-size: 24px;
   font-weight: bold;
-  color: #FFF;
-  margin: 20px 0px;
+  color: #2e281f;
+  margin: 20px 0px ;
   padding: 2vh 10vw;
+  border: 10px outset black;
+}
+
+.item-red-btn:hover {
+  color: #1d160b;
+  background: #b76f0e;
 }
 
 .or-text {
   font-size: 20px;
+  margin: 0 20px;
 }
 
 .item-destroy {
-  background-color: lightgray;
+  background-color: #efe2cf;
   text-align: center;
   font-size: 24px;
-  color: black;
+  color: #2e281f;
   margin: 20px 0px;
   padding: 2vh 10vw;
+  border: 10px outset black;
+}
+
+.item-destroy:hover {
+  color: #1d160b;
+  background: #ff0000;
 }
 
 .item-explain-box {
@@ -79,14 +91,19 @@
 }
 
 .detail-table {
+  border-bottom: 10px solid black;
+  border-left: 10px solid black;
+  border-right: 10px solid black;
   margin-bottom: 30px;
   width: 100%;
+  background-color: #efe2cf;
 }
 
 .detail-item {
+  color: black;
   width: 20%;
-  background-color: #eee;
-  border: 1px solid #dedede;
+  background-color: #b76f0e;
+  border: 1px solid #1d160b;
   font-size: 14px;
   text-align: center;
 }
@@ -94,8 +111,9 @@
 .detail-value {
   width: 80%;
   padding: 20px;
-  border: 1px solid #dedede;
+  border: 1px solid #1d160b;
   font-size: 14px;
+  background-color: #efe2cf;
 }
 
 .option {
@@ -203,4 +221,13 @@
   text-decoration: none;
   font-weight: bold;
   font-size: 23px;
+}
+
+.basket-area-switch {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #2e281f;
+  margin-top: -70px;
 }
