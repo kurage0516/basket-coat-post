@@ -6,11 +6,12 @@ class CommentsController < ApplicationController
     else
       @basket_area = @comment.basket_area
       @comments = @basket_area.comments
-      render "basket_areas/show"
+      render 'basket_areas/show'
     end
   end
 
   private
+
   def comment_params
     params.require(:comment).permit(:text).merge(user_id: current_user.id, basket_area_id: params[:basket_area_id])
   end

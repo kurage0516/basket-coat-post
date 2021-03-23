@@ -4,7 +4,7 @@ class BasketAreasController < ApplicationController
   before_action :contributor_confirmation, only: [:edit, :update, :destroy]
 
   def index
-    @basket_area = BasketArea.order("created_at DESC")
+    @basket_area = BasketArea.order('created_at DESC')
   end
 
   def new
