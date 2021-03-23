@@ -1,37 +1,40 @@
 <%= render "shared/header" %>
-<div class='item-contents'>
+<div class='post-contents'>
+  <%# 投稿検索 %>
   <%= form_with(url: search_basket_areas_path, local: true, method: :get, class: "search-form") do |form| %>
     <%= form.text_field :keyword, placeholder: "都道府県で検索", class: "search-input" %>
     <%= form.submit "検索", class: "search-btn" %>
   <% end %>
-  <ul class='item-lists'>
+  <%# /投稿検索 %>
+  <%# 投稿一覧 %>
+  <ul class='post-lists'>
     <li class='list'>
       <% @basket_area.each do |basket_area| %>
         <%= link_to basket_area_path(basket_area.id), method: :get do %>
-          <div class="item-img-content-a">
-            <%= image_tag basket_area.image, class:"item-box-img" %>
+          <div class="post-img-content-a">
+            <%= image_tag basket_area.image, class:"post-box-img" %>
           </div>
 
           <table class="detail-table">
             <tbody>
               <tr>
-                <th class="detail-item">施設名</th>
+                <th class="detail-post">施設名</th>
                 <td class="detail-value"><%= basket_area.coat_name %></td>
               </tr>
               <tr>
-                <th class="detail-item">住所</th>
+                <th class="detail-post">住所</th>
                 <td class="detail-value"><%= basket_area.street_address %></td>
               </tr>
               <tr>
-                <th class="detail-item">URL</th>
+                <th class="detail-post">URL</th>
                 <td class="detail-value"><%= basket_area.url %></td>
               </tr>
               <tr>
-                <th class="detail-item">利用料金</th>
+                <th class="detail-post">利用料金</th>
                 <td class="detail-value"><%= basket_area.price %></td>
               </tr>
               <tr>
-                <th class="detail-item">利用時間</th>
+                <th class="detail-post">利用時間</th>
                 <td class="detail-value"><%= basket_area.time %></td>
               </tr>
             </tbody>
@@ -40,5 +43,6 @@
       <% end %>
     </li>
   </ul>
+  <%# /投稿一覧 %>
 </div>
 <%= render "shared/ssecond-footer" %>

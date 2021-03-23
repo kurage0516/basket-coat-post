@@ -1,325 +1,9 @@
-/* リセットCSS */
-* {
-  box-sizing: border-box;
-}
-
-html,
-body,
-ul,
-li,
-h1,
-h2,
-p,
-div {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN W3", sans-serif;
-  color: #3b4043;
-}
-
-li {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  vertical-align: bottom;
-}
-
-a {
-  text-decoration: none;
-  color: #3b4043;
-}
-
-/* ヘッダー */
-
-.header {
-  background-color: #efe2cf;
-}
-.inner {
-  width: 100%;
-  
-}
-.nav {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  width: 300px;
-  mix-blend-mode: multiply;
-}
-
-.logo_a {
-  width: 150px;
-  height: 100px;
-  mix-blend-mode: multiply;
-}
-
-.nav__left {
-  margin-left: 100px;
-}
-
-.nav__right {
-  margin-right: 100px;
-}
-
-.nav__btn{
-  display: inline-block;
-  padding: 0.4em 1.6em;
-  font-size: 0.8em;
-  color: orange;
-  text-decoration: none;
-  user-select: none;
-  border: 1px black solid;
-  border-radius: 3px;
-  transition: 0.4s ease;
-}
-.nav__btn:hover{
-  color: black;
-  background: orange;
-}
-
-.nav__logout{
-  display: inline-block;
-  padding: 0.4em 1.6em;
-  font-size: 0.8em;
-  color: orange;
-  text-decoration: none;
-  user-select: none;
-  border: 1px black solid;
-  border-radius: 3px;
-  transition: 0.4s ease;
-}
-.nav__logout:hover{
-  color: black;
-  background: orange;
-}
-
-/* 一覧表示 */
-
-/* フォーム周り */
-.form__wrapper{
-  min-height: calc(100vh - 161px);
-}
-
-.form__text {
-  width: 50%;
-}
-
-.field{
-  margin: 10px 0;
-}
-
-.field_comment {
-  border: 1px solid #1d160b;
-  height: 200px;
-  width: 450px;
-  background-color: #efe2cf;
-}
-
-.actions{
-  margin-bottom: 40px;
-}
-
-.form__btn{
-  display: inline-block;
-  padding: 0.4em 1.6em;
-  font-size: 0.8em;
-  color: #fff;
-  text-decoration: none;
-  user-select: none;
-  background: #b76f0e;
-  border: 1px #1d160b solid;
-  border-radius: 3px;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
-  transition: 0.2s ease;
-}
-
-.form__btn:hover {
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
-  cursor: pointer;
-  background: red;
-}
-
-/* メイン */
-
-.greeting{
-  margin-bottom: 20px;
-}
-.greeting__link{
-  text-decoration: underline;
-}
-.page-heading {
-  font-size: 30px;
-  margin-bottom: 28px;
-}
-.card__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  min-height: calc(100vh - 161px);
-}
-.card {
-  width: calc((100% - 50px) / 3);
-  margin-bottom: 40px;
-}
-.card__img {
-  margin-bottom: 16px;
-}
-.card__title {
-  display: block;
-  font-size: 20px;
-  margin-bottom: 8px;
-  font-weight: bold;
-}
-.card__summary {
-  font-size: 16px;
-}
-.card__user {
-  display: block;
-  font-size: 12px;
-  color: #999;
-  text-align: right;
-  text-decoration: underline;
-}
-
-/* 詳細ページ */
-.prototype__wrapper{
-  min-height: calc(100vh - 161px);
-}
-.prototype__hedding{
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-}
-.prototype__user{
-  display: block;
-  font-size: 16px;
-  color: #999;
-  text-align: center;
-  text-decoration: underline;
-}
-.prototype__image{
-  width: 40%;
-  margin: 0 auto;
-  padding: 16px 0;
-}
-.prototype__detail{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 8px;
-}
-.detail__title{
-  font-size: 20px;
-  font-weight: bold;
-}
-.prototype__manage{
-  display: flex;
-  justify-content: center;
-  padding-top: 16px;
-}
-.prototype__btn{
-  padding: 0.4em 1.6em;
-  font-size: 0.4em;
-  color: #999;
-  text-decoration: none;
-  user-select: none;
-  border: 1px #999 solid;
-  border-radius: 3px;
-  transition: 0.4s ease;
-  margin: 0 4px;
-}
-.prototype__btn:hover{
-  color: #fff;
-  background: #999;
-}
-
-.prototype__comments{
-  background-color: #2e281f;
-  padding: 20px;
-  margin: 28px 0 40px 0;
-  text-align: center;
-}
-
-.comments_title {
-  color: #b76f0e;
-}
-
-.comments_lists{
-  width: 50%;
-  height: 100%;
-  margin: 100px 0;
-}
-
-.comments_list{
-  color: #1d160b;
-  list-style: inside;
-  padding-bottom: 5px;
-  background-color: #efe2cf;
-  padding-left: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.comment_user{
-  color: gray;
-  padding-left: 20px;
-  text-decoration: underline;
-}
-
-/* ユーザーページ */
-.user__wrapper{
-  min-height: calc(100vh - 161px);
-}
-.table{
-  border-collapse: collapse;
-  margin-bottom: 32px;
-  width: 50%;
-}
-.table__col1{
-  text-align: left;
-  font-weight: bold;
-  background: #fafafa;
-  border-collapse: collapse;
-  border: 1px solid #f5f5f5;
-  width: 30%;
-  padding: 8px;
-}
-.table__col2{
-  text-align: left;
-  border: 1px solid #f5f5f5;
-  border-collapse: collapse;
-  width: 70%;
-  padding: 16px 8px;
-}
-.user__card {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-/* フッター */
-
-.footer {
-  background-color: #999;
-  padding: 10px 0;
-}
-.copyright {
-  text-align: center;
-  color: #fff;
-  font-size: 10px;
-}
-
 /* タブレット対応 */
 @media (max-width: 1024px) {
+  .header {
+    margin-bottom: -50px;
+  }
+
   .nav {
     display: flex;
     flex-direction: column;
@@ -338,7 +22,7 @@ a {
     display:none;
   }
 
-  .item-contents {
+  .post-contents {
     margin-top: 30px;
   }
 
@@ -346,10 +30,19 @@ a {
     width: 80%;
   }
 
-  .item-img {
+  .post-img {
     width: 100%;
     height: 100%;
   }
+
+  .field_comment {
+    width: 300px;
+  }
+
+  .comments_lists {
+    width: 350px;
+  }
+
 }
 
  /* スマホ表示 */
@@ -361,4 +54,29 @@ a {
   .form-wrap {
     width: 80%;
   }
+
+  .posts-sell-contents {
+    min-width: 425px;
+  }
+
+  .posts-sell-main {
+    min-width: 425px;
+  }
+
+  .form-wrap {
+    min-width: 425px;
+  }
+
+  .list {
+    min-width: 425px;
+  }
+
+  .post-img-content-a {
+    min-width: 425px;
+  }
+
+  .detail-table {
+    min-width: 425px;
+  }
+
 }

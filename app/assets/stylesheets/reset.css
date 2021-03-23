@@ -11,6 +11,8 @@
 html{
   color:#000;
   background:#FFF;
+  margin: 0;
+  padding: 0;
 }
 /*
   TODO remove settings on BODY since we can't namespace it.
@@ -19,6 +21,11 @@ html{
   TODO test putting a class on HEAD.
       - Fails on FF.
 */
+
+* {
+  box-sizing: border-box;
+}
+
 body,
 div,
 dl,
@@ -124,3 +131,22 @@ legend {
 }
 /* YUI CSS Detection Stamp */
 #yui3-css-stamp.cssreset { display: none; }
+
+body {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN W3", sans-serif;
+  color: #3b4043;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+  color: #3b4043;
+}
