@@ -116,6 +116,13 @@ a {
   margin: 10px 0;
 }
 
+.field_comment {
+  border: 1px solid #1d160b;
+  height: 200px;
+  width: 450px;
+  background-color: #efe2cf;
+}
+
 .actions{
   margin-bottom: 40px;
 }
@@ -127,8 +134,8 @@ a {
   color: #fff;
   text-decoration: none;
   user-select: none;
-  background: #87CEFA;
-  border: 1px #87CEFA solid;
+  background: #b76f0e;
+  border: 1px #1d160b solid;
   border-radius: 3px;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
   transition: 0.2s ease;
@@ -137,6 +144,7 @@ a {
 .form__btn:hover {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
   cursor: pointer;
+  background: red;
 }
 
 /* メイン */
@@ -219,7 +227,6 @@ a {
   padding-top: 16px;
 }
 .prototype__btn{
-  display: block;
   padding: 0.4em 1.6em;
   font-size: 0.4em;
   color: #999;
@@ -236,23 +243,35 @@ a {
 }
 
 .prototype__comments{
-  background-color: #f6f6f6;
+  background-color: #2e281f;
   padding: 20px;
   margin: 28px 0 40px 0;
+  text-align: center;
+}
+
+.comments_title {
+  color: #b76f0e;
 }
 
 .comments_lists{
-  padding-left: 20px;
+  width: 50%;
+  height: 100%;
+  margin: 100px 0;
 }
 
 .comments_list{
-  list-style-type: square;
+  color: #1d160b;
+  list-style: inside;
   padding-bottom: 5px;
+  background-color: #efe2cf;
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .comment_user{
-  font-size: 16px;
-  color: #999;
+  color: gray;
+  padding-left: 20px;
   text-decoration: underline;
 }
 
