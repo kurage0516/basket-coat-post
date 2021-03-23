@@ -1,18 +1,16 @@
-<div class="items-sell-contents">
-  <header class="items-sell-header">
+<div class="posts-sell-contents">
+  <%# ヘッダー %>
+  <header class="posts-sell-header">
     <%= link_to image_tag('Basket.logo7.jpg' , class: 'second-logo'), "/" %>
   </header>
-
-
-  <div class="items-sell-main">
-    <div class="items-sell-title">
+  <%# /ヘッダー %>
+  <div class="posts-sell-main">
+    <div class="posts-sell-title">
       Edit a Post
     </div>
     <%= form_with(model: @basket_area, local: true) do |f| %>
-
     <%= render 'shared/error_messages', model: f.object %>
-
-<%# 出品画像 %>
+    <%# 投稿画像 %>
     <div class="img-upload">
       <div class="weight-bold-text">
         施設画像
@@ -25,38 +23,38 @@
         <%= f.file_field :image, id:"item-image" %>
       </div>
     </div>
-    <%# /出品画像 %>
-    <%# 商品名と商品説明 %>
-    <div class="new-items">
+    <%# /投稿画像 %>
+    <%# 施設名と施設説明 %>
+    <div class="new-posts">
       <div class="weight-bold-text">
         施設名
         <span class="indispensable">必須</span>
       </div>
-      <%= f.text_area :coat_name, class:"items-text", id:"item-name", placeholder:"例) 〇〇体育館", maxlength:"40" %>
-      <div class="items-explain">
+      <%= f.text_area :coat_name, class:"posts-text", id:"item-name", placeholder:"例) 〇〇体育館", maxlength:"40" %>
+      <div class="posts-explain">
         <div class="weight-bold-text">
           住所
           <span class="indispensable">必須</span>
         </div>
-        <%= f.text_area :street_address, class:"items-text", id:"item-info", placeholder:"※都道府県、市区町村、番地、建物名含めすべて入力をしてください。 例) 〇〇県〇〇市〇〇区〇〇1-2-3 〇〇ビル1F" ,rows:"7" ,maxlength:"1000" %>
+        <%= f.text_area :street_address, class:"posts-text", id:"item-info", placeholder:"※都道府県、市区町村、番地、建物名含めすべて入力をしてください。 例) 〇〇県〇〇市〇〇区〇〇1-2-3 〇〇ビル1F" ,rows:"7" ,maxlength:"1000" %>
       </div>
       <div class="weight-bold-text">
         URL
         <span class="form-any">任意</span>
       </div>
-      <%= f.text_area :url, class:"items-text", id:"item-name", placeholder:"例) http://〇〇.com", maxlength:"1000" %>
+      <%= f.text_area :url, class:"posts-text", id:"item-name", placeholder:"例) http://〇〇.com", maxlength:"1000" %>
       <div class="weight-bold-text">
         利用料金
         <span class="indispensable">必須</span>
       </div>
-      <%= f.text_area :price, class:"items-text", id:"item-name", placeholder:"無料の場合は0と記入 例)1時間500円", maxlength:"40" %>
+      <%= f.text_area :price, class:"posts-text", id:"item-name", placeholder:"無料の場合は0と記入 例)1時間500円", maxlength:"40" %>
       <div class="weight-bold-text">
         利用時間
         <span class="indispensable">必須</span>
       </div>
-      <%= f.text_area :time, class:"items-text", id:"item-name", placeholder:"例) 9:00~17:00", maxlength:"40" %>
+      <%= f.text_area :time, class:"posts-text", id:"item-name", placeholder:"例) 9:00~17:00", maxlength:"40" %>
     </div>
-    <%# /商品名と商品説明 %>
+    <%# /施設名と施設説明 %>
     <%# 下部ボタン %>
     <div class="sell-btn-contents">
       <%= f.submit "投稿する" , class:"sell-btn" %>
@@ -65,7 +63,9 @@
     <%# /下部ボタン %>
   </div>
   <% end %>
-  <footer class="items-sell-footer">
+  <%# フッター %>
+  <footer class="posts-sell-footer">
     <%= link_to image_tag('Basket.logo7.jpg' ,class: 'second-logo'), "/" %>
   </footer>
+  <%# /フッター %>
 </div>

@@ -1,43 +1,43 @@
-<%= render "shared/header" %>
-
-<%# 商品の概要 %>
-<div class="item-show">
-  <div class="item-box">
-    <div class="item-img-content-a">
-      <%= image_tag @basket_area.image, class:"item-box-img" %>
+<%= render "shared/ssecond-header" %>
+<div class="post-show">
+  <%# 投稿の概要 %>
+  <div class="post-box">
+    <div class="post-img-content-a">
+      <%= image_tag @basket_area.image, class:"post-box-img" %>
     </div>
-
     <table class="detail-table">
       <tbody>
         <tr>
-          <th class="detail-item">施設名</th>
+          <th class="detail-post">施設名</th>
           <td class="detail-value"><%= @basket_area.coat_name %></td>
         </tr>
         <tr>
-          <th class="detail-item">住所</th>
+          <th class="detail-post">住所</th>
           <td class="detail-value"><%= @basket_area.street_address %></td>
         </tr>
         <tr>
-          <th class="detail-item">URL</th>
+          <th class="detail-post">URL</th>
           <td class="detail-value"><%= @basket_area.url %></td>
         </tr>
         <tr>
-          <th class="detail-item">利用料金</th>
+          <th class="detail-post">利用料金</th>
           <td class="detail-value"><%= @basket_area.price %></td>
         </tr>
         <tr>
-          <th class="detail-item">利用時間</th>
+          <th class="detail-post">利用時間</th>
           <td class="detail-value"><%= @basket_area.time %></td>
         </tr>
       </tbody>
     </table>
   </div>
+  <%# /投稿の概要 %>
+  <%# コメント一覧 %>
   <div class="basket-area-switch">
     <% if user_signed_in? %>
       <% if current_user == @basket_area.user %>
-        <%= link_to "情報編集", edit_basket_area_path, method: :get, class: "item-red-btn" %>
+        <%= link_to "情報編集", edit_basket_area_path, method: :get, class: "post-red-btn" %>
         <div class="or-text"></div>
-        <%= link_to "削除", basket_area_path(@basket_area.id), method: :delete, class:"item-destroy" %>
+        <%= link_to "削除", basket_area_path(@basket_area.id), method: :delete, class:"post-destroy" %>
       <% end %>
     <% end %>
   </div>
@@ -52,8 +52,7 @@
       </li>
     <% end %>
   </ul>
-  <div class="prototype__comments">
-    <%# ログインしているユーザーには以下のコメント投稿フォームを表示する %>
+  <div class="post__comments">
     <% if user_signed_in? %>
       <%= form_with(model: [@basket_area, @comment], local: true) do |f|%>
         <div class="field">
@@ -64,7 +63,7 @@
         </div>
       <% end %> 
     <% end %>
-    <%# // ログインしているユーザーには上記を表示する %>
   </div>
+  <%# /コメント一覧 %>
 </div>
 <%= render "shared/ssecond-footer" %>

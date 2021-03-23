@@ -12,7 +12,7 @@ class BasketArea < ApplicationRecord
   end
 
   def self.search(search)
-    if search != ""
+    if search != ''
       BasketArea.where('street_address LIKE(?)', "%#{search}%")
     else
       BasketArea.all

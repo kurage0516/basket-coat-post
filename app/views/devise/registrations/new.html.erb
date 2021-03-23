@@ -1,5 +1,4 @@
 <%= render "shared/second-header"%>
-
 <%= form_with model: @user, url: user_registration_path, class: 'registration-main', local: true do |f| %>
 <div class='form-wrap'>
   <div class='form-header'>
@@ -7,9 +6,7 @@
       Welcome
     </h1>
   </div>
-  
   <%= render 'shared/error_messages', model: f.object %>
-
   <div class="form-group-b">
     <div class='form-text-wrap'>
       <label class="form-text">ニックネーム</label>

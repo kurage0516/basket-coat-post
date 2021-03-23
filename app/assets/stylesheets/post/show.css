@@ -1,0 +1,174 @@
+.post-show {
+  background-color: #2e281f;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5vh 0;
+}
+
+/* 投稿の概要 */
+.post-box {
+  background-color: #2e281f;
+  width: 100%;
+  padding: 10vh 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post-box>.name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.post-box-img {
+  height: 50vh;
+  width: 60vw;
+  min-height: 500px;
+  background-color: #efe2cf;
+  object-fit: contain;
+}
+
+.post-red-btn {
+  text-align: center;
+  background-color: #efe2cf;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2e281f;
+  margin: 20px 0px ;
+  padding: 2vh 10vw;
+  border: 10px outset black;
+}
+
+.post-red-btn:hover {
+  color: #1d160b;
+  background: #b76f0e;
+}
+
+.or-text {
+  font-size: 20px;
+  margin: 0 20px;
+}
+
+.post-destroy {
+  background-color: #efe2cf;
+  text-align: center;
+  font-size: 24px;
+  color: #2e281f;
+  margin: 20px 0px;
+  padding: 2vh 10vw;
+  border: 10px outset black;
+}
+
+.post-destroy:hover {
+  color: #1d160b;
+  background: #ff0000;
+}
+
+.detail-table {
+  border-bottom: 10px solid black;
+  border-left: 10px solid black;
+  border-right: 10px solid black;
+  margin-bottom: 30px;
+  width: 100%;
+  background-color: #efe2cf;
+}
+
+.detail-post {
+  color: black;
+  width: 20%;
+  background-color: #b76f0e;
+  border: 1px solid #1d160b;
+  font-size: 14px;
+  text-align: center;
+}
+
+.detail-value {
+  width: 80%;
+  padding: 20px;
+  border: 1px solid #1d160b;
+  font-size: 14px;
+  background-color: #efe2cf;
+}
+/* 投稿の概要 */
+
+/* コメント一覧 */
+.basket-area-switch {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #2e281f;
+  margin-top: -70px;
+}
+
+.field{
+  margin: 10px 0;
+}
+
+.field_comment {
+  border: 1px solid #1d160b;
+  height: 200px;
+  width: 450px;
+  background-color: #efe2cf;
+}
+
+.actions{
+  margin-bottom: 40px;
+}
+
+.form__btn{
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 0.8em;
+  color: #fff;
+  text-decoration: none;
+  user-select: none;
+  background: #b76f0e;
+  border: 1px #1d160b solid;
+  border-radius: 3px;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+  transition: 0.2s ease;
+}
+
+.form__btn:hover {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  background: red;
+}
+
+.post__comments{
+  background-color: #2e281f;
+  padding: 20px;
+  margin: 28px 0 40px 0;
+  text-align: center;
+}
+
+.comments_title {
+  color: #b76f0e;
+}
+
+.comments_lists{
+  width: 500px;
+  height: 100%;
+  margin: 100px 0;
+}
+
+.comments_list{
+  color: #1d160b;
+  list-style: inside;
+  padding-bottom: 5px;
+  background-color: #efe2cf;
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment_user{
+  color: gray;
+  padding-left: 20px;
+  text-decoration: underline;
+}
+/* コメント一覧 */
