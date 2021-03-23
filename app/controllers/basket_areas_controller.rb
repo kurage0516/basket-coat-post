@@ -21,6 +21,10 @@ class BasketAreasController < ApplicationController
   end
 
   def show
+    @basket_area = BasketArea.new
+    @basket_area = BasketArea.find(params[:id])
+    @comment = Comment.new
+    @comments = @basket_area.comments
   end
 
   def edit

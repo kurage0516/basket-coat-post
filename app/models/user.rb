@@ -8,4 +8,5 @@ class User < ApplicationRecord
   end
 
   has_many :basket_areas
+  has_many :comments
 end
