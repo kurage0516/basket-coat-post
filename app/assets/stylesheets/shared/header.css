@@ -73,3 +73,18 @@
   color: black;
   background: orange;
 }
+
+.list-user-name {
+  display: flex;
+  justify-content: center;
+}
+
+.user-nickname {
+  color: #1d160b;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.user-nickname:hover {
+  color: orange;
+}

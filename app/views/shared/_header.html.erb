@@ -9,6 +9,7 @@
       </div>
       <% if user_signed_in? %>
         <div class="nav__right">
+          <li class="list-user-name"><%= link_to current_user.nickname, root_path, class: "user-nickname" %></li>
           <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :nav__logout %>
           <%= link_to "COAT POST", new_basket_area_path, class: :nav__btn %>
         </div>
