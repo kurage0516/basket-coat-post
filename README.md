@@ -9,11 +9,11 @@ https://basket-coat-post.herokuapp.com/
 
 # テスト用アカウント
 ## basic認証
-ID：admin
+ID：admin  
 Password：7678
 
 ## ログインアカウント
-メールアドレス：test@basket.com
+メールアドレス：test@basket.com  
 パスワード：basket0516
 
 # 利用方法
