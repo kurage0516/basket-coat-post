@@ -118,7 +118,7 @@ Password：7678
 ヘッダーのログインボタンから登録したユーザー情報を入力するとログインすることができます。  
 アプリケーション使用終了後はヘッダーのログアウトボタンでログアウトできます。
 
-![ユーザー認証](app/assets/images/Basket.logo1.jpeg)
+![ユーザー認証](https://user-images.githubusercontent.com/73592225/112314070-ee691780-8ceb-11eb-90ab-a75a08322b94.png)
 
 # テーブル設計
 
