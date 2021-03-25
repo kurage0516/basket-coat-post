@@ -39,7 +39,10 @@ class BasketAreasController < ApplicationController
   end
 
   def destroy
-    redirect_to root_path if @basket_area.delete
+    @basket_area = BasketArea.find(params[:id])
+    if @basket_area.destroy
+      redirect_to root_path
+    end
   end
 
   def search
