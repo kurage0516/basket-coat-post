@@ -166,6 +166,16 @@ Password：7678
 ### ログインしていないコメント画面  
 ![ログインしていない画面](https://user-images.githubusercontent.com/73592225/112463758-fdac9b80-8da5-11eb-9d80-708649240d4d.png)  
 
+# 使用技術
+Ruby/Ruby on Rails/MySQL/Github/AWS/Visual Studio Code  
+
+# 工夫したポイント
+・レスポンシブデザインを考え、異なるデバイスでもViewが崩れないように実装しました。
+## PC画面
+![PC画面](https://user-images.githubusercontent.com/73592225/112467650-aceb7180-8daa-11eb-8a79-535591908ff0.png)  
+## スマホ画面
+![スマホ画面](https://user-images.githubusercontent.com/73592225/112467765-cdb3c700-8daa-11eb-8004-d446a9929282.png)  
+
 # テーブル設計
 
 ## users テーブル
