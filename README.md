@@ -222,3 +222,30 @@ Ruby/Ruby on Rails/MySQL/Github/AWS/Visual Studio Code
 
 # ER図
 ![ER図](https://user-images.githubusercontent.com/73592225/112465562-36e60b00-8da8-11eb-8df5-3a41064b6986.png)
+
+# ローカル環境での動作方法
+
+1.ターミナル上で、作業用のディレクトリに移動し、以下のコマンドを実行してください。  
+```
+% git clone https://github.com/kurage0516/basket-coat-post.git  
+% cd basket-coat-post  
+% bundle install  
+% yarn install  
+% rails db:create  
+% rails db:migrate
+```
+2.config/environments/development.rbおよびconfig/environments/production.rbの記述を下記のように修正してください。  
+```
+# 修正前  
+# ~前略~  
+config.active_storage.service = :amazon
+```
+```
+# 修正後  
+# ~前略~  
+config.active_storage.service = :local
+```
+3.下記コマンドを入力後、https://localhost:3000/ にアクセスしてください。
+```
+% rails s
+```
