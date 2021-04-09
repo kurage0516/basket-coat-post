@@ -1,0 +1,12 @@
+ja:
+ activerecord:
+   attributes:
+     user:
+       email: メールアドレス
+       nickname: ニックネーム
+     basket_area:
+       image: 施設画像
+       coat_name: 施設名
+       street_address: 住所
+       time: 利用時間
+       price: 利用料金
